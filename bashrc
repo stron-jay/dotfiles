@@ -14,7 +14,7 @@ export EDITOR=vim
 export TERMINAL=alacritty
 export BROWSER=firefox
 
-alias cat='cat -nts'
+alias cat='cat -s'
 alias docker='sudo docker'
 alias i3lock='i3lock --color 000000'
 alias kubectl='sudo kubectl'
@@ -25,6 +25,8 @@ alias grep='grep --color=auto'
 alias pac='sudo pacman --noconfirm --color=always'
 alias ssn='shutdown now'
 alias tree="tree -CashI 'node_modules|.git' --du --filelimit 100"
+alias xc='xsel -ib'
+alias xp='xsel -ob'
 # git gud
 alias gac='git add . && git commit -m'
 alias gcl='git clone'
