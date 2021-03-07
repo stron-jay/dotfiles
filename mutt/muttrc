@@ -1,0 +1,28 @@
+# source "gpg -d ~/.config/mutt/passwords.gpg |"
+
+set imap_check_subscribed = yes
+set imap_list_subscribed = yes
+
+
+set folder = "imaps://jaymonari@outlook.com@outlook.office365.com:993"
+set smtp_url = "smtp://jaymonari@outlook.com@smtp.office365.com:587"
+
+set from = "jaymonari@outlook.com"
+set realname = "Jay Monari"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set postponed = "+Drafts"
+
+mailboxes =INBOX =Sent =Drafts =Junk
+
+set sidebar_visible = yes
+set sidebar_width = 20
+bind index,pager \CH sidebar-prev
+bind index,pager \CL sidebar-next
+bind index,pager \CO sidebar-open
+bind index,pager \CN sidebar-toggle-visible
+
+set editor=nvim
+set print_command=lprint
+
