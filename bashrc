@@ -10,18 +10,20 @@ export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
 export LESSHISTFILE=/dev/null
 unset HISTFILE
 
-export EDITOR=vim
+export EDITOR=nvim
 export TERMINAL=alacritty
 export BROWSER=firefox
 
 alias cat='cat -s'
 alias docker='sudo docker'
+alias grep='grep --color=auto'
 alias i3lock='i3lock --color 000000'
 alias kubectl='sudo kubectl'
-alias ls='ls --color=auto'
 alias la='ls -AhF'
 alias ll='ls -lAhF'
-alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+alias ma='cmatrix -abC blue -u 5 && clear'
+alias mvnit='mvn clean spring-boot:run'
 alias pac='sudo pacman --noconfirm --color=always'
 alias ssn='shutdown now'
 alias tree="tree -CashI 'node_modules|.git' --du --filelimit 100"
@@ -34,7 +36,12 @@ alias gco='git checkout'
 alias gl='git log --graph --date=short'
 alias gp='git push'
 alias gpl='git pull'
+alias grmc='git rm --cached'
 alias gs='git status'
+# Playtime!
+alias jtest='javac JavaPlay.java -d build/ && java -cp build/ JavaPlay'
+alias cpptest='g++ cpplay.cpp -o build/cpplay && ./build/cpplay'
+alias tstest='tsc && node build/ts_play.js'
 
 PS1='\w '
 
