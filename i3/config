@@ -17,6 +17,7 @@ floating_modifier $mod
 
 # Application bindings
 bindsym $mod+Return exec --no-startup-id $TERMINAL
+bindsym $mod+a exec --no-startup-id $TERMINAL
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+w exec --no-startup-id $BROWSER
 bindsym $mod+t exec --no-startup-id $TERMINAL -e htop
