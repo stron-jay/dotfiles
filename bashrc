@@ -31,6 +31,7 @@ alias xc='xsel -ib'
 alias xp='xsel -ob'
 # git gud
 alias gac='git add . && git commit -m'
+alias gb='git branch -av'
 alias gcl='git clone'
 alias gco='git checkout'
 alias gl='git log --graph --date=short'
