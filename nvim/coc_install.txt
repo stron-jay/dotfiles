@@ -1,0 +1,1 @@
+nvim -c "CocInstall -sync coc-css coc-pyls coc-html coc-emmet coc-tag coc-omni coc-emoji coc-word coc-git coc-yaml coc-yank coc-json | q" && nvim -c "CocInstall -sync coc-tsserver coc-prettier coc-java coc-markmap coc-markdownlint coc-lua coc-java-lombok coc-gitignore coc-github coc-fzf-preview coc-cmake coc-clangd coc-angular | q"
