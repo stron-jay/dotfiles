@@ -6,6 +6,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
+export FZF_DEFAULT_COMMAND="find . -not -name 'node_modules'"
 
 export LESSHISTFILE=/dev/null
 unset HISTFILE
@@ -35,6 +36,7 @@ alias gb='git branch -av'
 alias gcl='git clone'
 alias gco='git checkout'
 alias gd='git diff'
+alias gdmnit='git reset --soft HEAD~1 && git restore --staged .'
 alias gl='git log --graph --date=short'
 alias gp='git push'
 alias gpl='git pull'

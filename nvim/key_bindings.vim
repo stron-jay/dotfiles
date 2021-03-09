@@ -53,8 +53,6 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
-nnoremap <Leader>d <C-d>
-nnoremap <Leader>u <C-u>
 nnoremap U <C-r>
 nnoremap <Leader>v <C-v>
 " nnoremap <Tab> :bn<CR>
@@ -74,8 +72,7 @@ vnoremap { "ndi{}<Left><C-o>"nP<Right><C-c>
 vnoremap <Leader>s :'<,'>!sort -f<CR>
 " -- TERMINAL --
 tnoremap \<CR> <C-\><C-n>
-tnoremap \7 <C-\><C-n>:res 7<CR>:wincmd k<CR>
-tnoremap \m <C-\><C-n>:res 2<CR>:wincmd k<CR>
+tnoremap \2 <C-\><C-n>:res2<CR>:wincmd k<CR>
 tnoremap \c <C-c>
 " -- GLOBAL --
 "  Yank & Pull
@@ -93,10 +90,9 @@ nnoremap <Leader>k :wincmd k<CR>
 nnoremap <Leader>l :wincmd l<CR>
 nnoremap <Leader>\ :vsp<CR>
 " -- PLUGINS --
-" GitGutter
-nnoremap <Leader>gg :GitGutterToggle<CR>
 " FZF
-nnoremap <Leader>p :GFiles<CR>
+nnoremap <Leader>p :Files<CR>
 " remove all trailing whitespaces
-nnoremap <silent> <Leader>rs :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+nnoremap <silent> <Leader>rs :let _s=@/ <Bar> :%s/\s\+$//e
+      \ <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
