@@ -8,7 +8,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
-export FZF_DEFAULT_COMMAND="find . -not -name 'node_modules' -or -not -name 'target'"
+export FZF_DEFAULT_COMMAND="find . -not -path '**/node_modules/**' -and -not -path '**/target/**' -and -not -path '**/.git/**'"
 
 export LESSHISTFILE=/dev/null
 unset HISTFILE
@@ -45,8 +45,9 @@ alias grmc='git rm --cached'
 alias gs='git status'
 # Docker
 alias docker='sudo docker'
+alias dc='sudo docker-compose'
 dni() {
-  eval "sudo docker node inspect $1 --pretty"
+  eval "docker node inspect $1 --pretty"
 }
 dnps(){
   eval "docker node ps $(echo $(docker node ls -q)) | uniq"
